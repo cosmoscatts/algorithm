@@ -35,11 +35,11 @@ public class Main {
             else t = 0;
         }
         int i = C.size() - 1;
-        while (i > 1) { // 去除前导 0
+        while (i > 0) { // 去除前导 0
             if (C.get(i) != 0) break;
             i--;
         }
-        return C.subList(i, C.size());
+        return C.subList(0, i + 1);
     }
 
     /**
